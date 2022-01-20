@@ -2,17 +2,17 @@
 #include<iostream>
 
 using namespace std;
-int ans[8][2] = { 0 };
+int ans[8] = { 0 };
 int money;
 void solve() {
-	ans[0][0] = 50000;	ans[1][0] = 10000;
-	ans[2][0] = 5000;	ans[3][0] = 1000;
-	ans[4][0] = 500;	ans[5][0] = 100;
-	ans[6][0] = 50;		ans[7][0] = 10;
+	ans[0] = 50000;	ans[1] = 10000;
+	ans[2] = 5000;	ans[3] = 1000;
+	ans[4] = 500;	ans[5] = 100;
+	ans[6] = 50;	ans[7] = 10;
 
 	for (int i = 0; i < 8; i++) {
-		cout <<  money / ans[i][0] << ' ';
-		money = money % ans[i][0];
+		cout <<  money / ans[i] << ' ';
+		money = money % ans[i];
 	}
 	
 }
